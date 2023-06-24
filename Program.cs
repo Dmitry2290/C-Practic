@@ -1,11 +1,14 @@
-﻿Console.WriteLine("Enter number : ");
-String strNum = Console.ReadLine();
-int num = Convert.ToInt32(strNum);
+Console.Clear();
+Console.WriteLine("Введите A: ");
+int numberA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите B: ");
+int numberB = Convert.ToInt32(Console.ReadLine());
 
-int sqr = num  * num;
-
-System.Console.WriteLine($"sqr = {sqr}");
-
-// if(aqr < 0){
-//     sqr*= -1;
-// }
+if (Math.Pow(numberB, 2) == numberA)
+{
+    Console.WriteLine("А является квадратом В");
+}
+else 
+{
+    Console.WriteLine("А не является квадратом B");
+}
