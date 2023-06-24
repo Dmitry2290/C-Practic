@@ -1,11 +1,14 @@
-string One = Console.ReadLine();
-string Two = Console.ReadLine();
+Console.Clear();
+Console.WriteLine("Введите A: ");
+int numberA = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите B: ");
+int numberB = Convert.ToInt32(Console.ReadLine());
 
-int numOne = Convert.ToInt32(One);
-int numTwo = Convert.ToInt32(Two);
-
-if ((numOne * numTwo) == numTwo) {
-
-    Console.WriteLine("Первое число является квадратом второго");
-
+if (Math.Pow(numberB, 2) == numberA)
+{
+    Console.WriteLine("А является квадратом В");
+}
+else 
+{
+    Console.WriteLine("А не является квадратом B");
 }
